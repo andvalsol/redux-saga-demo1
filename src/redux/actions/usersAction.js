@@ -1,5 +1,12 @@
-import {GET_USERS_FAILURE, GET_USERS_SUCCESS} from "../types";
+import {GET_USERS, GET_USERS_FAILURE, GET_USERS_SUCCESS} from "../types";
 
+
+export function getUsers(users) {
+    return {
+        type: GET_USERS,
+        payload: users
+    }
+}
 
 export function getUsersSuccess(users) {
     return {
